@@ -1,0 +1,74 @@
+body {
+  font-family: "Space Mono", monospace;
+  background: #000000;
+  color: #ffffff;
+  height: 100vh;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1 {
+  font-size: 30vmin;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Nav {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+.Nav a {
+  text-decoration: none;
+  color: #999999;
+  margin-right: 16px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.Nav a.active {
+  color: #ffffff;
+  transition: color 0.5s;
+}
+
+@media (max-width: 1172px) {
+  h1 {
+    font-size: 20vmin;
+  }
+}
+
+@media (max-width: 768px) {
+  .Nav {
+    left: 50%;
+    text-align: center;
+    right: 0px;
+    transform: translate(-50%, 0);
+  }
+
+  .Nav a {
+    font-size: 24px;
+    margin-right: 24px;
+  }
+
+  .Nav a:last-child {
+    margin-right: 0px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
